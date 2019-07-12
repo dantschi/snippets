@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Github API excercise</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <input type="password" name="username" placeholder="username" autocomplete="off">
+            <input type="password" name="password" placeholder="password">
+            <input type="password" name="usertosearch" placeholder="usertosearch">
+            <button type="button" id="btn-search" name="button">Search</button>
+        </header>
+
+        <main id="main">
+
+            <!-- <section class="content-box">
+                <img src="https://avatars2.githubusercontent.com/u/25254?v=4" alt="">
+                <div class="textholder">
+                    <p>thisismyname</p>
+                </div>
+            </section> -->
+
+        </main>
+
+        <script id="maintemplate" type="text/x-handlebars-template">
+            {{#dataToRender}}
+            <section id="{{name}}" class="content-box">
+                <div class="repobox">
+                    <img src={{owner.avatar_url}} alt={{owner.login}}>
+                    <div class="textholder">
+                        <p>{{full_name}}</p>
+                    </div>
+                </div>
+
+                <div class="commitbox"></div>
+            </section>
+            {{/dataToRender}}
+            </script>
+
+        <script id="committemplate" type="text/x-handlebars-template">
+
+                    <ul class="list">
+                        {{#dataToRender2}}
+                        {{#commit.message}}
+                            <li>{{this}}</li>
+                        {{/commit.message}}
+                        {{/dataToRender2}}
+                    </ul>
+
+        </script>
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
