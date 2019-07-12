@@ -1,11 +1,5 @@
 ## simple throttle function
 
-the function can be called afterwards in the code with the needed time in milliseconds, i.e.:
-
-```js
-timer(getMoreData(), 250);
-```
-
 ```js
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -35,4 +29,10 @@ function timer(fn, timeInMs) {
 /////////////////////////////////////////////////
 // THROTTLE END
 /////////////////////////////////////////////////
+```
+
+the function can be called afterwards in the code with the needed time in milliseconds, i.e.:
+
+```js
+timer(getMoreData(), 250);
 ```
