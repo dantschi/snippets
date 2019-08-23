@@ -1,4 +1,4 @@
-## Left rotate array. The second argument defines how many steps is done
+** Left rotate array. The second argument defines how many steps are done **
 
 ```js
 function rotLeft(a, d) {
@@ -13,7 +13,7 @@ rotLeft([1, 2, 3, 4, 5], 4); // ==> [5, 1, 2, 3, 4]
 
 ---
 
-## descending sort array and keep the values if already exists
+** descending sort array and keep the values if already exists **
 
 ```js
 var sortedArray = notSortedArray.sort((a, b) => {
