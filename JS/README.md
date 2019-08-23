@@ -10,3 +10,13 @@ function rotLeft(a, d) {
 
 rotLeft([1, 2, 3, 4, 5], 4); // ==> [5, 1, 2, 3, 4]
 ```
+
+---
+
+## descending sort array and keep the values if already exists
+
+```js
+var sortedArray = notSortedArray.sort((a, b) => {
+  return a < b ? 1 : a > b ? -1 : 0;
+});
+```
